@@ -1,3 +1,11 @@
+.college{
+  background-image : url(https://lh3.googleusercontent.com/proxy/NPnSQ8bK2s8wbEF3b1u4OE1lsqpJMEcIWT7ikZGi8v2AQc-572Ngqi-NJ7IHJ6s1oX_sqHThUjjG4xzIRRCSqVY4Dyc) ;
+  background-size : cover;
+  background-position : center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 .header {
   background-color:#EEEEEE;
   padding:10px;
@@ -40,3 +48,4 @@
 .button:hover {
   background-color:#F0F0F0;
 }
+
