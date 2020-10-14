@@ -6,46 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home/CSE</title>
 <link rel="stylesheet" href="2p.css">
+<script type="text/javascript>
+ function populate(s2,s3){ 
+ var s2= document.getElementById(s2);
+ var s3= document.getElementById(s3);
+ s3.innerHTML ="";
+if(s1.value=="1"){
+  var optionArray=["/","M1/M1","physics/physics"];
+}else if(s1.value=="2"){
+  var optionArray=["/","M2/M2","chemistry/chemistry"];
+}
+for(var option in optionArray){
+    var pair=optionArray[option].split("/");
+     var newOption = document.createElement("option";
+    newOption.value=pair[0];
+   newOption.innerHTML=pair[1];
+   s3.options.add(newOption);
+}
+}
+</script>
 </head>
 <body class="bg">
    
   <h1>
-     Hey Cseian</h1>
-   
-
+     Hey Cseian
+ </h1>
 <div class="cen">
-<form>
-<label for="reg">Regulation</label><br>
-  <input list="regs" name="reg" id="reg">
-  <datalist id="regs">
-    
-    <option value="R17">
-    
-    
-  </datalist><br>
-  
-  <label for="sem">Semester</label><br>
-  <input list="seme" name="sem" id="sem">
-  <datalist id="seme">
-    <option value="3-1">
-    </datalist><br>
-    <label for="sub">Subject</label><br>
-  <input list="subj" name="sub" id="sub">
-  <datalist id="subj">
-    <option value="Computer Networks">
-      <option value="Web Technologies">
-      <option value="Compiler Design">
-      <option value="Data Mining and Ware Housing">
-      <option value="Management Science">
-      <option value="Software Engineering">
-      
-    </datalist><br><br>
-  
-  
-  <input type="submit">
-</form>
-</div>
-   
- 
+ <form>
+  <h3>Regulation:</h3>
+  <select id="slct1"name="slct1">
+   <option value=""></option>
+   <option value="R17"></option>
+ </select> 
+    <h3>Semister</h3>
+  <select id="slct2" name="slct2" onchange="populate(this.id,'slct3v)">
+   <option value=""></option>
+   <option value="1"></option>
+    <option value="2"></option>
+ </select> 
+  <h3>Subjects</h3>
+  <select id="slct3" name="slct3">
+   <option value=""></option>
+ </select> 
+ </form>
 </body>
 </html>
