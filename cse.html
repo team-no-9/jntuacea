@@ -12,13 +12,13 @@
  var s3= document.getElementById(s3);
  s3.innerHTML ="";
 if(s1.value=="1"){
-  var optionArray=["/","M1/M1","physics/physics"];
+  var optionArray=["|","M1|M1","physics|physics"];
 }else if(s1.value=="2"){
-  var optionArray=["/","M2/M2","chemistry/chemistry"];
+  var optionArray=["|","M2|M2","Chemistry|Chemistry"];
 }
 for(var option in optionArray){
-    var pair=optionArray[option].split("/");
-     var newOption = document.createElement("option";
+    var pair=optionArray[option].split("|");
+     var newOption = document.createElement("option");
     newOption.value=pair[0];
    newOption.innerHTML=pair[1];
    s3.options.add(newOption);
@@ -49,5 +49,6 @@ for(var option in optionArray){
    <option value=""></option>
  </select> 
  </form>
+</div>
 </body>
 </html>
