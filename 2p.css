@@ -35,3 +35,17 @@
     
     
   }
+.button {
+  background-color: #ddd;
+  width: 300px;
+  border: none;
+  border-radius: 15px;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  flex-direction:coloumn;
+  margin: 4px 2px;
+  cursor: pointer;
+}
