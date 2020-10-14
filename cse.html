@@ -6,25 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home/CSE</title>
 <link rel="stylesheet" href="2p.css">
-<script type="text/javascript>
- function populate(s2,s3){ 
- var s2= document.getElementById(s2);
- var s3= document.getElementById(s3);
- s3.innerHTML ="";
-if(s1.value=="1"){
-  var optionArray=["|","M1|M1","physics|physics"];
-}else if(s1.value=="2"){
-  var optionArray=["|","M2|M2","Chemistry|Chemistry"];
-}
-for(var option in optionArray){
-    var pair=optionArray[option].split("|");
-     var newOption = document.createElement("option");
-    newOption.value=pair[0];
-   newOption.innerHTML=pair[1];
-   s3.options.add(newOption);
-}
-}
-</script>
+
 </head>
 <body class="bg">
    
@@ -34,20 +16,25 @@ for(var option in optionArray){
 <div class="cen">
  <form>
   <h3>Regulation:</h3>
-  <select id="slct1"name="slct1">
+  <select id="slct1" name="slct1">
    <option value=""></option>
-   <option value="R17"></option>
+   <option value="R17">R17</option>
  </select> 
     <h3>Semister</h3>
-  <select id="slct2" name="slct2" onchange="populate(this.id,'slct3v)">
+  <select id="slct2" name="slct2">
    <option value=""></option>
-   <option value="1"></option>
-    <option value="2"></option>
+   <option value="3">3</option>
  </select> 
   <h3>Subjects</h3>
   <select id="slct3" name="slct3">
    <option value=""></option>
- </select> 
+   <option value="WT">Web Technology</option>
+ <option value="CN">Computer Networks</option>
+  <option value="CD">Compiler Design</option>
+   <option value="DMHW">DataMining&HouseWiring</option>
+    <option value="Se">Software Enginneering</option>
+ <option value="MS">Management Science</option>
+</select> 
  </form>
 </div>
 </body>
