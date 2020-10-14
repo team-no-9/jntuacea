@@ -49,3 +49,36 @@
   background-color:#F0F0F0;
 }
 
+.bg{
+  background-image : url(girllap.jpg) ;
+  background-size : cover;
+  background-position : center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+  .cen{
+    width:300px;
+    heigth:1000px;
+    background-color:rgb(0,0,0,0.6);
+    color:white;
+    top:50%;
+    left:50%;
+    position:absolute;
+    transform:translate(-50%,-50%);
+    box-sizing: border-box;
+    margin: 30px;
+    padding-left: 80px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+   
+  }
+   
+
+  .head1{
+    text-align: center;
+    color: whitesmoke;
+    margin-top: 150px;
+    
+    
+  }
+
