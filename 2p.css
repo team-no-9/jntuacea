@@ -36,10 +36,10 @@
     
   }
 .button {
-  background-color: #ddd;
+  background-color:#002942;
   border: none;
   border-radius: 15px;
-  color: black;
+  color: white;
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
@@ -49,5 +49,5 @@
   cursor: pointer;
 }
 .button:hover {
-  background-color:#F0F0F0;
+  background-color:#0011AB;
 }
