@@ -34,11 +34,11 @@
  window.open("https://team-no-9.github.io/jntuacea/ms.html");
  }
  }
+
+function giveSelection(selValue) {
 var sem = document.querySelector('#sem');
 var sub = document.querySelector('#sub');
 var options2 = sub.querySelectorAll('option');
-
-function giveSelection(selValue) {
   sub.innerHTML = '';
   for(var i = 0; i < options2.length; i++) {
     if(options2[i].dataset.option === selValue) {
