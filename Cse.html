@@ -42,7 +42,7 @@ function giveSelection(selValue) {
   sub.innerHTML = '';
   for(var i = 0; i < options2.length; i++) {
     if(options2[i].dataset.option === selValue) {
-      sub.<option value="3-1">appendChild(options2[i]);
+      sub.appendChild(options2[i]);
     }
   }
 }
@@ -70,7 +70,7 @@ giveSelection(sem.value);
   
   <label for="sem">Semester</label><br>
   <input list="seme" name="sem" id="sem"required="required" onchange="giveSelection(this.value)">
-  <datalist id="seme">
+  <datalist id="sem">
     <option value="3-1">
 <option value="2-1">
     </datalist><br>
